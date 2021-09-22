@@ -1,11 +1,16 @@
+:root {
+    --purple: #8055FF;
+    --light-purpul: #A8A8FF;
+}
+
 body,
 html {
-    padding: 2rem 3rem 0 3rem;
+    padding: 2rem 3rem 0;
     box-shadow: 0px 32px 128px rgba(0, 0, 0, 0.5), 0px 16px 32px rgba(0, 0, 0, 0.34), 0px 8px 8px rgba(0, 0, 0, 0.25);
 }
 
 .subheader {
-    background-color: #8055FF;
+    background-color: var(--purple);
     height: 32px;
     font-family: Ubuntu;
     font-style: normal;
@@ -18,7 +23,7 @@ html {
     justify-content: space-between;
     margin: 2rem 0;
     padding: 0.5rem;
-    border: 2px solid #A8A8FF;
+    border: 2px solid var(--light-purpul);
     box-sizing: border-box;
 }
 .filter__components {
@@ -26,32 +31,30 @@ html {
 }
 .filter__text {
     width: 256px;
-    background: #8055FF;
+    background: var(--purple);;
 }
 .filter__item {
     width: 32px;
     height: 32px;
     margin: 0 0.5rem;
-    background: #8055FF;
+    background: var(--purple);;
 }
 .table {
-    border: 2px solid #8055FF;
+    border: 2px solid var(--purple);
     box-sizing: border-box;
     margin: 2rem 0;
-}
-.table__wrapper {
     display: flex;
     flex-direction: column;
 }
 .table__header {
     height: 48px;
-    background: #8055FF;
+    background: var(--purple);;
 }
 .table__body {
     height: 512px;
-    background: #A8A8FF;
+    background: var(--light-purpul);
 }
 .table__footer {
     height: 48px;
-    background: #8055FF;
+    background: var(--purple);;
 }
