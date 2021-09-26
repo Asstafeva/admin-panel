@@ -1,12 +1,12 @@
 :root {
     --purple: #8055FF;
-    --light-purpul: #A8A8FF;
+    --light-purple: #A8A8FF;
 }
 
 body,
 html {
     padding: 2rem 3rem 0;
-    box-shadow: 0px 32px 128px rgba(0, 0, 0, 0.5), 0px 16px 32px rgba(0, 0, 0, 0.34), 0px 8px 8px rgba(0, 0, 0, 0.25);
+    
 }
 
 .subheader {
@@ -23,14 +23,14 @@ html {
     justify-content: space-between;
     margin: 2rem 0;
     padding: 0.5rem;
-    border: 2px solid var(--light-purpul);
+    border: 2px solid var(--light-purple);
     box-sizing: border-box;
 }
 .filter__components {
     display: flex;
 }
 .filter__text {
-    width: 256px;
+    max-width: 256px;
     background: var(--purple);;
 }
 .filter__item {
@@ -42,19 +42,18 @@ html {
 .table {
     border: 2px solid var(--purple);
     box-sizing: border-box;
-    margin: 2rem 0;
     display: flex;
     flex-direction: column;
 }
 .table__header {
     height: 48px;
-    background: var(--purple);;
+    background: var(--purple);
 }
 .table__body {
     height: 512px;
-    background: var(--light-purpul);
+    background: var(--light-purple);
 }
 .table__footer {
     height: 48px;
-    background: var(--purple);;
+    background: var(--purple);
 }
