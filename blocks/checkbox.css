@@ -22,6 +22,6 @@
   width: 16px;
   height: 16px;
 }
-.checkbox-block__checkbox:checked + .checkbox-block__label{
+.checkbox-block__checkbox:checked + .checkbox-block__label {
   background: var(--blue); 
 }
