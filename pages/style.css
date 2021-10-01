@@ -1,0 +1,59 @@
+:root {
+    --purple: #8055FF;
+    --light-purple: #A8A8FF;
+}
+
+body,
+html {
+    padding: 2rem 3rem 0;
+    
+}
+
+.subheader {
+    background-color: var(--purple);
+    height: 32px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 32px;
+}
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    padding: 0.5rem;
+    border: 2px solid var(--light-purple);
+    box-sizing: border-box;
+}
+.filter__components {
+    display: flex;
+}
+.filter__text {
+    max-width: 256px;
+    background: var(--purple);;
+}
+.filter__item {
+    width: 32px;
+    height: 32px;
+    margin: 0 0.5rem;
+    background: var(--purple);;
+}
+.table {
+    border: 2px solid var(--purple);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.table__header {
+    height: 48px;
+    background: var(--purple);
+}
+.table__body {
+    height: 512px;
+    background: var(--light-purple);
+}
+.table__footer {
+    height: 48px;
+    background: var(--purple);
+}
