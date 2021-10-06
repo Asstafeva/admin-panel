@@ -11,12 +11,12 @@ html {
 
 .subheader {
     background-color: var(--purple);
-    height: 32px;
+    height: 3rem;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 .filter {
     display: flex;
@@ -30,30 +30,35 @@ html {
     display: flex;
 }
 .filter__text {
-    max-width: 256px;
+    max-width: 16rem;
     background: var(--purple);;
 }
 .filter__item {
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     margin: 0 0.5rem;
     background: var(--purple);;
 }
 .table {
-    border: 2px solid var(--purple);
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    border: 2px solid var(--purple);
+    box-sizing: border-box;
 }
 .table__header {
-    height: 48px;
+    height: 3rem;
     background: var(--purple);
 }
 .table__body {
-    height: 512px;
+    height: 32rem;
     background: var(--light-purple);
 }
 .table__footer {
-    height: 48px;
+    height: 3rem;
     background: var(--purple);
+}
+@media (max-width: 480px) {
+	.filter__text {
+        max-width: 6rem;
+    }
 }

@@ -4,7 +4,7 @@
     --light-blue: #BAD8F5;
     --red: #F53152;
 }
-body, html {
+body, html, input {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
@@ -44,7 +44,7 @@ body, html {
 .input-block__input::placeholder{
     color: var(--light-blue);
 }
-.input-block__incorrect::-webkit-calendar-picker-indicator {
+.input-block__input_incorrect::-webkit-calendar-picker-indicator {
     color: transparent;
     background: none;
     z-index: 1;

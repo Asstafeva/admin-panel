@@ -6,21 +6,21 @@
 }
 
 .radio-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
   max-width: 104px;
   max-height: 64px;
   border: 1px dashed var(--purple);
   border-radius: 5px;
-  padding: 1.5rem;
-  display: flex;
-  justify-content: space-between;
 }
 .radio-block__radio {
   display:none;
 }
 .radio-block__radio + .radio-block__label {
+  display: block;
   border: 1px solid var(--light-blue);
   border-radius:50%;
-  display: block;
   width: 16px;
   height: 16px;
 }

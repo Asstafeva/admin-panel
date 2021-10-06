@@ -5,20 +5,20 @@
 }
 
 .checkbox-block {
+  display: flex;
+  justify-content: space-between;
   max-width: 104px;
   max-height: 64px;
   border: 1px dashed var(--purple);
   border-radius: 5px;
   padding: 1.5rem;
-  display: flex;
-  justify-content: space-between;
 }
 .checkbox-block__checkbox {
   display:none;
 }
 .checkbox-block__checkbox + .checkbox-block__label {
-  border: 1px solid var(--light-blue);
   display: block;
+  border: 1px solid var(--light-blue);
   width: 16px;
   height: 16px;
 }

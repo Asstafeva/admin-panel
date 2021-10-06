@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../reset.css">
 	<link rel="stylesheet" href="../blocks/input.css">
+    <link rel="stylesheet" href="../blocks/searchbar.css">
     <link rel="stylesheet" href="../blocks/checkbox.css">
     <link rel="stylesheet" href="../blocks/radio.css">
-    <title>Document</title>
+    <title>UI-kit</title>
 </head>
 <body>
     <div class="input-block">
@@ -19,13 +20,24 @@
         <div class="input">
             <label class="input-block__label" for="incorrect">Дата и время заказа</label>
             <div class="input-block__container">
-                <input class="input-block__incorrect" type="date" value="2021-12-06" id="incorrect">
+                <input class="input-block__input_incorrect" type="date" value="2021-12-06" id="incorrect">
                 <button class="input-block__btn" type="button"></button>
             </div>
         </div>
         <div class="input">
             <label for="" class="input-block__label" for="disabled">Дата и время заказа</label>
             <input class="input-block__input input-block__input_disabled" type="date" value="2021-12-06" id="disabled">
+        </div>
+    </div>
+    <div class="search-block">
+        <div class="search">
+            <input type="text" class="search__field" placeholder="Номер заказа или ФИО">
+            <img src="../icons/search.svg" alt="search" class="search__icon">
+        </div>
+        <div class="search search-margin">
+            <img src="../icons/search.svg" alt="search" class="search__icon">
+            <input type="number" class="search__field" value="50744">
+            <button class="search__reset-button" type="button"></button>
         </div>
     </div>
     <div class="checkbox-block">
