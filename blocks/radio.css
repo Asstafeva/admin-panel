@@ -1,0 +1,40 @@
+:root {
+  --white: #FFFFFF;
+  --purple: #8055FF;
+  --blue: #459DF5;
+  --light-blue: #BAD8F5;
+}
+
+.radio-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  max-width: 104px;
+  max-height: 64px;
+  border: 1px dashed var(--purple);
+  border-radius: 5px;
+}
+.radio-block__radio {
+  display:none;
+}
+.radio-block__radio + .radio-block__label {
+  display: block;
+  border: 1px solid var(--light-blue);
+  border-radius:50%;
+  width: 16px;
+  height: 16px;
+}
+.radio-block__radio:checked + .radio-block__label {
+  background: var(--blue); 
+}
+.radio-block__radio:checked + .radio-block__label:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 8px;
+  height: 8px;
+  left: calc(50% - 8px/2);
+  top: calc(50% - 8px/2);
+  border-radius: 50%;
+  background: var(--white);
+}
