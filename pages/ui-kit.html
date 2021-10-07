@@ -20,13 +20,13 @@
         <div class="input">
             <label class="input-block__label" for="incorrect">Дата и время заказа</label>
             <div class="input-block__container">
-                <input class="input-block__input_incorrect" type="date" value="2021-12-06" id="incorrect">
+                <input class="input-block__input_incorrect" placeholder="Введите" value="06.12.2021" id="incorrect">
                 <button class="input-block__btn" type="button"></button>
             </div>
         </div>
         <div class="input">
             <label for="" class="input-block__label" for="disabled">Дата и время заказа</label>
-            <input class="input-block__input input-block__input_disabled" type="date" value="2021-12-06" id="disabled">
+            <input class="input-block__input input-block__input_disabled" placeholder="Введите" value="06.12.2021" id="disabled">
         </div>
     </div>
     <div class="search-block">
@@ -41,11 +41,21 @@
         </div>
     </div>
     <div class="checkbox-block">
-        <input class="checkbox-block__checkbox" type="checkbox" id="checkbox-order-info">
-        <label class="checkbox-block__label" for="checkbox-order-info"></label>
-        <input class="checkbox-block__checkbox" type="checkbox" id="checkbox-order-item" checked>
-        <label class="checkbox-block__label" for="checkbox-order-item"></label>
-    </div>
+        <div class="checkbox-block__wrapper">
+          <input class="checkbox-block__checkbox" type="checkbox" id="checkbox-order-info">
+          <label class="checkbox-block__label" for="checkbox-order-info"></label>
+          <svg class="checkbox-block__img" viewBox="0 0 16 16" fill="#FFF" stroke="none">
+          <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+          </svg>
+        </div>
+        <div div class="checkbox-block__wrapper">
+          <input class="checkbox-block__checkbox" type="checkbox" id="checkbox-order-item" checked>
+          <label class="checkbox-block__label" for="checkbox-order-item"></label>
+          <svg class="checkbox-block__img" viewBox="0 0 16 16" fill="#FFF" stroke="none">
+          <path d="M7 10L4.5 6L3 7L7 14L14.5 3.5V3L13 2L7 10Z" stroke="none"/>
+          </svg>
+        </div>
+      </div>
     <div class="radio-block">
         <input class="radio-block__radio" type="radio" name ="radio-btn" id="radio-order-info">
         <label class="radio-block__label" for="radio-order-info"></label>

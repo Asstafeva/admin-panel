@@ -13,6 +13,9 @@
   border-radius: 5px;
   padding: 1.5rem;
 }
+.checkbox-block__wrapper {
+  position: relative;
+}
 .checkbox-block__checkbox {
   display:none;
 }
@@ -24,4 +27,7 @@
 }
 .checkbox-block__checkbox:checked + .checkbox-block__label {
   background: var(--blue); 
+}
+.checkbox-block__img {
+  position: absolute;
 }
