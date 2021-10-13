@@ -1,0 +1,101 @@
+:root {
+    --white: #FFFFFF;
+    --purple: #8055FF;
+    --blue: #459DF5;
+    --gray: #E5E5E5;
+    --black: #000000;
+}
+body,
+html {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: var(--gray);
+}
+
+.buttons {
+    max-width: 36rem;
+    max-height: 23.5rem;
+    border: 1px dashed #8055FF;
+    border-radius: 0.3rem;
+    padding: 3rem;
+}
+.buttons__section {
+    display: flex;
+    margin-bottom: 3rem;
+}
+.buttons__section:last-child {
+    margin-bottom: 0;
+}
+.buttons__block {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33.3%;
+}
+.button {
+    display: flex;
+    width: 7rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    color: var(--white);
+    background-color: var(--blue);
+    cursor: pointer;
+}
+.button:last-child {
+    margin: 0;
+}
+.button:hover {
+    box-shadow: 0 0 0.25rem var(--purple);
+}
+.button:focus,
+.button:active {
+    outline: none;
+    box-shadow: 0 0 0.25rem var(--purple);
+}
+.buttons__cover {
+    margin-bottom: 1rem;
+}
+.buttons__cover:last-child {
+    margin: 0;
+}
+.button__img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+}
+.button__img:last-child{
+  margin: 0;
+}
+.button__text_only {
+    width: 5.5rem;
+}
+.button__icon_only {
+    width: 2rem;
+    padding: 0.25rem;
+    justify-content: center;
+    align-items: center;
+}
+.button__light {
+    background-color: transparent;
+    color: var(--blue);
+}
+.button__dark {
+    color: var(--black);
+}
+.button__mini {
+    max-width: 5.75rem;
+    max-height: 1.5rem;
+    padding: 0.25rem 0.5rem;
+}
+.button__text_only_mini {
+    max-width: 4.5rem;
+    max-height: 1.5rem;
+}
+.button__icon_only_mini {
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+}

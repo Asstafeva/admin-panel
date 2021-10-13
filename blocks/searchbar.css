@@ -1,0 +1,49 @@
+:root {
+    --light-blue: #BAD8F5;
+    --black: #000;
+    --blue: #459DF5;
+    --purple: #8055FF;
+}
+body, html, input {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+}
+.search-block {
+    display: flex;
+    flex-direction: column;
+    max-width: 352px;
+    max-height: 192px;
+    border: 1px dashed var(--purple);
+    border-radius: 5px;
+    padding: 3rem;
+}
+.search {
+    display: flex;
+    align-items: center;
+    max-width: 256px;
+    max-height: 32px;
+    border: 1px solid var(--blue);
+    padding: 0.5rem 0.25rem 0.55rem 0;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+.search__icon {
+    width: 16px;
+    height: 16px;
+    order: -1;
+    margin: 0.5rem;
+}
+.search__field {
+    width: 100%;
+}
+.search__field::placeholder {
+    color: var(--light-blue);
+}
+.search__reset-button {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23BAD8F5'%3E%3Cpath d='M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5' fill='none'/%3E%3C/svg%3E") no-repeat right;
+    border: none;
+    padding: 0;
+}
