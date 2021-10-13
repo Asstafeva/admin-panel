@@ -9,14 +9,13 @@ body,
 html {
     font-family: 'Ubuntu', sans-serif;
     background-color: var(--gray);
-    box-sizing: border-box;
 }
 
 .buttons {
     max-width: 36rem;
     max-height: 23.5rem;
     border: 1px dashed #8055FF;
-    border-radius: 5px;
+    border-radius: 0.3rem;
     padding: 3rem;
 }
 .buttons__section {
@@ -64,6 +63,9 @@ html {
     width: 1rem;
     height: 1rem;
     margin-right: 0.3rem;
+}
+.button__img:last-child{
+  margin: 0;
 }
 .button__text_only {
     width: 5.5rem;
