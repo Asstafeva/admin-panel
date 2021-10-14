@@ -1,0 +1,33 @@
+:root {
+  --purple: #8055FF;
+  --blue: #459DF5;
+  --light-blue: #BAD8F5;
+}
+
+.checkbox-block {
+  display: flex;
+  justify-content: space-between;
+  max-width: 104px;
+  max-height: 64px;
+  border: 1px dashed var(--purple);
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+.checkbox-block__wrapper {
+  position: relative;
+}
+.checkbox-block__checkbox {
+  display:none;
+}
+.checkbox-block__checkbox + .checkbox-block__label {
+  display: block;
+  border: 1px solid var(--light-blue);
+  width: 16px;
+  height: 16px;
+}
+.checkbox-block__checkbox:checked + .checkbox-block__label {
+  background: var(--blue); 
+}
+.checkbox-block__img {
+  position: absolute;
+}

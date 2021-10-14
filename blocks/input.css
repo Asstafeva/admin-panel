@@ -1,0 +1,71 @@
+:root {
+    --purple: #8055FF;
+    --blue: #459DF5;
+    --light-blue: #BAD8F5;
+    --red: #F53152;
+}
+body, html, input {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 16px;
+    width: 100%;
+    height: 100%;
+}
+.input-block {
+    padding: 0 3rem 2.5rem;
+    max-width: 352px;
+    max-height: 400px;
+    border: 1px dashed var(--purple);
+    border-radius: 5px;
+}
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.input-block__label {
+    margin: 0.5rem 0;
+}
+.input-block__input {
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    align-items: center;
+    padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+}
+.input-block__container{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--red);
+    background-size: 20px;
+    border-radius: 4px;
+    align-items: center;
+    padding: 0.5rem 0.25rem 0.5rem 0.5rem;
+}
+.input-block__input::placeholder{
+    color: var(--light-blue);
+}
+.input-block__input_incorrect::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+}
+.input-block__btn {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23BAD8F5'%3E%3Cpath d='M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5' fill='none'/%3E%3C/svg%3E") no-repeat right;
+    border: none;
+    width: 16px;
+    height: 16px;
+    padding: 0.5rem;
+}
+.input-block__input_disabled {
+    background: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 16 16' fill='%23000' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 5a4 4 0 1 1 8 0v2a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2V5Zm6 0v2H6V5a2 2 0 1 1 4 0Z'/%3e%3cpath d='M12 5c0-2.2-1.8-4-4-4S4 2.8 4 5v4h2V5c0-1.25 1-2 2-2s2 .75 2 2v4h2V5Z'/%3e%3c/svg%3e") no-repeat right;
+    background-color: var(--light-blue);
+    background-size: 16px;
+    background-position-x: 250px;
+}
+.input-block__input_disabled::-webkit-calendar-picker-indicator {
+    color: transparent;
+    background: none;
+    z-index: 1;
+} 
